@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/responsive.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container grid wide">
+        <div class="header mt16">
+            <div class="header-nav row">
+                <div class="brand col l-2 m-o-1 m-2">
+                    <i class="fa-solid fa-book-open-reader"></i>
+                    <h4>LEARNING</h4>
+                </div>
+                <input type="checkbox" hidden id="sideNav__input">
+                <label for="sideNav__input col l-10" id="sideNav">
+                    <ul class="header-nav__list  ">
+                        <li class="header-nav__item"><a href=""> Home</a></li>
+                        <li class="header-nav__item hasSubnav">
+                            <a href="#course"> Course</a>
+                            <div class="sub-nav txt-center">
+                                <ul>
+                                    <li><a href="">Course 1</a></li>
+                                    <li><a href="">Course 2</a></li>
+                                    <li><a href="">Course 3</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header-nav__item"><a href=""> Service</a></li>
+                        <li class="header-nav__item"><a href=""> Testimonial</a></li>
+                        <li class="header-nav__item"><a href="#contact"> Contact</a></li>
+                        <li class="header-nav__item-btn m-0">
+                            <a href="./signIn.html" class="header-nav__link btn disable">Login</a>
+                        </li>
+                        <li class="header-nav__item-btn m-0">
+                            <a href="./register.html" class="header-nav__link btn ">Register</a>
+                        </li>
+                        <li class="header-nav__item l-0"><a href="./signIn.html"> Login</a></li>
+                        <li class="header-nav__item l-0"><a href="./register.html"> Register</a></li>
+
+                    </ul>
+                </label>
+
+
+                <div class="mobile-btn-menu ">
+                    <label for="sideNav__input" class="fa-solid fa-bars  icon-list" id="menu-icon"></label>
+                    <label for="sideNav__input" class="fa-solid fa-xmark  icon-close " id="menu-icon-close"></label>
+                </div>
+
+            </div>
+
+
+            <div class="header-content mt64 row">
+                <div class="row header-content__txt ">
+                    <h1 class="header-content__slogan col l-6 m-o-1 m-11 ">Learn more and make
+                        success the result
+                    </h1>
+                    <div class="header-content__desc col  l-5  m-o-1 m-11">
+                        <h4> - The best E-learning Platform</h4>
+                        <p class="mt16">Lorem ipsum dolor sit amet consectet
+                            t ducimus, recusandae maiore
+                            ga, veniam aut optio volup
+                            qui fugiat cumque assumenda aperiam? Nihil, nemo</p>
+                        <a class="btn mt16" href=""> Show all Courses</a>
+                    </div>
+                </div>
+
+                <div class="row header-content__introduce mt32 ">
+                    <div class="col l-9 header-content__introduce-vid m-o-1 m-10   ">
+                        <video width="100%" controls>
+                            <source src="./asset/videos/hello-world.mp4" type="video/mp4">
+                            Your browser does not support HTML video.
+                        </video>
+                    </div>
+                    <div class="col l-2 header-content__introduce-txt m-10  m-o-1  ">
+                        <div class="row">
+                            <div class="col flex-end l-12 m-4 txt-center header-content__introduce-stat">
+                                <h3>15+</h3>
+                                <p class="mt16">Total branches opened in last year</p>
+                            </div>
+                            <div class="col  l-12 m-4 txt-center header-content__introduce-stat mt32 ">
+                                <h3>5K+</h3>
+                                <p class="mt16">New students in last 39 days</p>
+                            </div>
+                            <div class="col flex-start l-12 m-3 txt-center header-content__introduce-stat mt32">
+                                <h3>15+</h3>
+                                <p class="mt16">Lorem ipsum dolor sit amet consectet
+                                    t ducimus, recusandae maiore</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="course" id="course">
+                <div class="row">
+                    <div class="course-title txt-center col l-o-3 mt16 l-6">
+                        <h2>Our Featured Courses</h2>
+                        <p>Lorem ipsum dolor sit amet consectet
+                            t ducimus, recusandae maioreLorem ipsum dolor sit amet consectet
+                            t ducimus, recusandae maiore</p>
+                    </div>
+                </div>
+                <div class="row mt32">
+                    <div class="course-card   col mt16 l-4-30 m-8 m-o-2  ">
+                        <div class="course-card__img" style="background-image:url(./asset/img/course-card.webp);"></div>
+                        <div class="course-card__hashtag mt8 txt-center">
+                            <div class="course-card__hashtag-subject">
+                                Development
+                            </div>
+                            <div class="course-card__hashtag-price">
+                                $225
+                            </div>
+                        </div>
+                        <h4 class="course-card__title mt8"> <a href="./course.html" style="text-decoration: none; color: var(--text-color);">Become a professional designer be with passion & dignity</a>
+                        </h4>
+                        <div class="course-card__desc mt16">
+                            <div class="course-card__desc-quantity ">
+                                <i class="fa-solid fa-book-open-reader"></i>
+                                <span> 20 lessons</span>
+                            </div>
+                            <div class="course-card__desc-student">
+                                <i class="fa-solid fa-user-group"></i>
+                                <span>237 students</span>
+                            </div>
+                        </div>
+                        <div class="course-card__footer mt16">
+                            <div class="course-card__footer-ratting">
+                                <span>5.0</span>
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span>(2589)</span>
+                            </div>
+                            <div class="course-card__footer-go txt-center">
+                                <span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card  mlr8 col mt16 l-4-30 m-8 m-o-2  ">
+                        <div class="course-card__img" style="background-image:url(./asset/img/course-card.webp);"></div>
+                        <div class="course-card__hashtag mt8 txt-center">
+                            <div class="course-card__hashtag-subject">
+                                Development
+                            </div>
+                            <div class="course-card__hashtag-price">
+                                $225
+                            </div>
+                        </div>
+                        <h4 class="course-card__title mt8"> <a href="./course.html" style="text-decoration: none; color: var(--text-color);">Become a professional designer be with passion & dignity</a>
+                        </h4>
+                        <div class="course-card__desc mt16">
+                            <div class="course-card__desc-quantity ">
+                                <i class="fa-solid fa-book-open-reader"></i>
+                                <span> 20 lessons</span>
+                            </div>
+                            <div class="course-card__desc-student">
+                                <i class="fa-solid fa-user-group"></i>
+                                <span>237 students</span>
+                            </div>
+                        </div>
+                        <div class="course-card__footer mt16">
+                            <div class="course-card__footer-ratting">
+                                <span>5.0</span>
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span>(2589)</span>
+                            </div>
+                            <div class="course-card__footer-go txt-center">
+                                <span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card  mlr8 col mt16 l-4-30 m-8 m-o-2  ">
+                        <div class="course-card__img" style="background-image:url(./asset/img/course-card.webp);"></div>
+                        <div class="course-card__hashtag mt8 txt-center">
+                            <div class="course-card__hashtag-subject">
+                                Development
+                            </div>
+                            <div class="course-card__hashtag-price">
+                                $225
+                            </div>
+                        </div>
+                        <h4 class="course-card__title mt8"> <a href="./course.html" style="text-decoration: none; color: var(--text-color);">Become a professional designer be with passion & dignity</a>
+                        </h4>
+                        <div class="course-card__desc mt16">
+                            <div class="course-card__desc-quantity ">
+                                <i class="fa-solid fa-book-open-reader"></i>
+                                <span> 20 lessons</span>
+                            </div>
+                            <div class="course-card__desc-student">
+                                <i class="fa-solid fa-user-group"></i>
+                                <span>237 students</span>
+                            </div>
+                        </div>
+                        <div class="course-card__footer mt16">
+                            <div class="course-card__footer-ratting">
+                                <span>5.0</span>
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span>(2589)</span>
+                            </div>
+                            <div class="course-card__footer-go txt-center">
+                                <span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card  mlr8 col mt16 l-4-30 m-8 m-o-2  ">
+                        <div class="course-card__img" style="background-image:url(./asset/img/course-card.webp);"></div>
+                        <div class="course-card__hashtag mt8 txt-center">
+                            <div class="course-card__hashtag-subject">
+                                Development
+                            </div>
+                            <div class="course-card__hashtag-price">
+                                $225
+                            </div>
+                        </div>
+                        <h4 class="course-card__title mt8"><a href="./course.html" style="text-decoration: none; color: var(--text-color);">Become a professional designer be with passion & dignity</a>
+                        </h4>
+                        <div class="course-card__desc mt16">
+                            <div class="course-card__desc-quantity ">
+                                <i class="fa-solid fa-book-open-reader"></i>
+                                <span> 20 lessons</span>
+                            </div>
+                            <div class="course-card__desc-student">
+                                <i class="fa-solid fa-user-group"></i>
+                                <span>237 students</span>
+                            </div>
+                        </div>
+                        <div class="course-card__footer mt16">
+                            <div class="course-card__footer-ratting">
+                                <span>5.0</span>
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span>(2589)</span>
+                            </div>
+                            <div class="course-card__footer-go txt-center">
+                                <span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card   col mt16 l-4-30 m-8 m-o-2  ">
+                        <div class="course-card__img" style="background-image:url(./asset/img/course-card.webp);"></div>
+                        <div class="course-card__hashtag mt8 txt-center">
+                            <div class="course-card__hashtag-subject">
+                                Development
+                            </div>
+                            <div class="course-card__hashtag-price">
+                                $225
+                            </div>
+                        </div>
+                        <h4 class="course-card__title mt8"> <a href="./course.html" style="text-decoration: none; color: var(--text-color);">Become a professional designer be with passion & dignity</a>
+                        </h4>
+                        <div class="course-card__desc mt16">
+                            <div class="course-card__desc-quantity ">
+                                <i class="fa-solid fa-book-open-reader"></i>
+                                <span> 20 lessons</span>
+                            </div>
+                            <div class="course-card__desc-student">
+                                <i class="fa-solid fa-user-group"></i>
+                                <span>237 students</span>
+                            </div>
+                        </div>
+                        <div class="course-card__footer mt16">
+                            <div class="course-card__footer-ratting">
+                                <span>5.0</span>
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span>(2589)</span>
+                            </div>
+                            <div class="course-card__footer-go txt-center">
+                                <span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card  mlr8 col mt16 l-4-30 m-8 m-o-2  ">
+                        <div class="course-card__img" style="background-image:url(./asset/img/course-card.webp);"></div>
+                        <div class="course-card__hashtag mt8 txt-center">
+                            <div class="course-card__hashtag-subject">
+                                Development
+                            </div>
+                            <div class="course-card__hashtag-price">
+                                $225
+                            </div>
+                        </div>
+                        <h4 class="course-card__title mt8"> <a href="./course.html" style="text-decoration: none; color: var(--text-color);">Become a professional designer be with passion & dignity</a>
+                        </h4>
+                        <div class="course-card__desc mt16">
+                            <div class="course-card__desc-quantity ">
+                                <i class="fa-solid fa-book-open-reader"></i>
+                                <span> 20 lessons</span>
+                            </div>
+                            <div class="course-card__desc-student">
+                                <i class="fa-solid fa-user-group"></i>
+                                <span>237 students</span>
+                            </div>
+                        </div>
+                        <div class="course-card__footer mt16">
+                            <div class="course-card__footer-ratting">
+                                <span>5.0</span>
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span>(2589)</span>
+                            </div>
+                            <div class="course-card__footer-go txt-center">
+                                <span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </span>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="statistic mt64">
+                <div class="row">
+                    <div class="col l-4-30 m-10 m-o-1 statistic-title ">
+                        <h2>We Make Your Learning Through Awesome</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Simi
+                            lique, quas veritatis sed inventore molestias aliquam quod volup
+                            tate culpa. Ullam, aperiam alias en
+                            im delectus labore neque fugit ipsum ea aut laboriosam.
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Simi
+                            lique, quas veritatis sed inventore molestias aliquam quod volup
+                        </p>
+
+                        <div class="row mt32 ">
+                            <div class="col l-3  txt-center statistic-title-stat ">
+                                <h3>15k+</h3>
+                                <p>Students</p>
+                            </div>
+
+                            <div class="col l-3  txt-center statistic-title-stat  ">
+                                <h3>200+</h3>
+                                <p>Countries</p>
+                            </div>
+
+                            <div class="col l-3  txt-center statistic-title-stat ">
+                                <h3>125+</h3>
+                                <p>Courses</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-5 m-12 ">
+                        <div class="row">
+
+                            <div class="col l-12 m-o-1 m-10 ">
+                                <div class="statistic-desc  mt8">
+                                    <div class="statistic-desc__header first">
+                                        <i class="fa-solid fa-play"></i>
+                                        <h4>Over 5.8K videos courses</h4>
+                                    </div>
+                                    <div class="statistic-desc__body mt8">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Simi
+                                            lique, quas veritatis sed inventore molestias aliquam quod volup
+                                            tate culpa. Ullam, aperiam alias en
+                                            im delectus labore neque fugit ipsum ea aut laboriosam.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col l-12  m-o-1 m-10">
+                                <div class="statistic-desc  mt8">
+                                    <div class="statistic-desc__header center">
+                                        <i class="fa-solid fa-award"></i>
+                                        <h4>Over 5.8K videos courses</h4>
+                                    </div>
+                                    <div class="statistic-desc__body mt8">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Simi
+                                            lique, quas veritatis sed inventore molestias aliquam quod volup
+                                            tate culpa. Ullam, aperiam alias en
+                                            im delectus labore neque fugit ipsum ea aut laboriosam.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col l-12 m-o-1 m-10 ">
+                                <div class="statistic-desc  mt8">
+                                    <div class="statistic-desc__header last">
+                                        <i class="fa-solid fa-check"></i>
+                                        <h4>Over 5.8K videos courses</h4>
+                                    </div>
+                                    <div class="statistic-desc__body mt8">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Simi
+                                            lique, quas veritatis sed inventore molestias aliquam quod volup
+                                            tate culpa. Ullam, aperiam alias en
+                                            im delectus labore neque fugit ipsum ea aut laboriosam.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="slider mt64 txt-center">
+
+                <div class="row">
+                    <div class="slider-title col l-o-3 l-6">
+                        <h2>Some Best Books</h2>
+                        <p>Lorem ipsum dolor sit amet consectet
+                            t ducimus, recusandae maioreLorem ipsum dolor sit amet consectet
+                            t ducimus, recusandae maiore</p>
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                    <div class=" slider-card col  l-2  m-4 ">
+                        <div class="slider-card__img" style="background-image: url(./asset/img/slider-card.jpg);"></div>
+                    </div>
+
+                    <div class=" slider-card col l-o-1  l-2  m-4">
+                        <div class="slider-card__img" style="background-image: url(./asset/img/slider-card.jpg);"></div>
+                    </div>
+
+                    <div class=" slider-card col l-o-1  l-2  m-4">
+                        <div class="slider-card__img" style="background-image: url(./asset/img/slider-card.jpg);"></div>
+                    </div>
+
+                    <div class=" slider-card col l-o-1 l-2  m-4">
+                        <div class="slider-card__img" style="background-image: url(./asset/img/slider-card-2.jpg);">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="slider-pagination col mt32 l-2 l-o-5 m-4 m-o-4">
+                        <ul>
+                            <li class="view"></li>
+                            <li class=""></li>
+                            <li class=""></li>
+                            <li class=""></li>
+                            <li class=""></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="join-course">
+                <div class="row">
+                    <div class="col l-5 join-course__desc m-o-1 m-10 ">
+                        <h2>Get more close with your courses</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligen
+                            di reiciendis reprehenderit fugiat placeat maxime. Porro
+                            obcaecati illum, architecto repellat ab quos illo, quo co
+                            rrupti magni libero maxime provident voluptatibus cum!
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligen
+                            di reiciendis reprehenderit fugiat placeat maxime. Porro
+                        </p>
+                        <span>
+                            <i class="fa-solid fa-check txt-center"></i>
+                            <h4>Detail description of each course</h4>
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-check txt-center"></i>
+                            <h4>Easy to understand language</h4>
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-check txt-center"></i>
+                            <h4>Simple adn easy to learn cousres</h4>
+                        </span>
+
+                        <a href="" class="btn mt16">Start Learning Now</a>
+
+                    </div>
+                    <div class="col l-6 m-10 m-o-1">
+                        <div class="join-course__img" style="background-image: url(./asset/img/join-course.jpg);">
+                            <div class="join-course__vid m-0">
+                                <video width="100%" controls>
+                                    <source src="./asset/videos/hello-world.mp4" type="video/mp4">
+                                    Your browser does not support HTML video.
+                                </video>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col l-12 m-o-1 m-10 mt128">
+                        <div class="row align-center">
+                            <div class="col l-12 join-course__footer">
+                                <div class="row join-course__footer-content">
+                                    <div class="col l-5 footer-content__title">
+                                        <h2>Ready to join...</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligen
+                                            di reiciendis reprehenderit fugiat placeat maxime. Porro</p>
+                                    </div>
+                                    <div class="col l-5 footer-content__btn">
+                                        <a href="" class="btn disable">Register Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer mt32">
+            <div class="row">
+                <div class="col l-3 m-5 m-o-1  mt16  footer-brand ">
+                    <div class="brand">
+                        <i class="fa-solid fa-book-open-reader"></i>
+                        <h4>LEARNING</h4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligen
+                        di reiciendis reprehenderit fugiat placeat maxime. Porro
+                    </p>
+                    <div class="footer-brand-icon mt16">
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+
+                <div class="col l-3  m-5  mt16  footer-categoy">
+                    <h4>Category</h4>
+                    <ul class=" mt16 footer-list">
+                        <li class="footer-list__item"><a href="">Privacy & Poilicy</a></li>
+                        <li class="footer-list__item"><a href="">Tems & Condition</a></li>
+                        <li class="footer-list__item"><a href="">Customer Support</a></li>
+                        <li class="footer-list__item"><a href="">For Business</a></li>
+                        <li class="footer-list__item"><a href="">Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="col l-3 m-5 m-o-1  mt16  footer-link ">
+                    <h4>Useful Links</h4>
+                    <ul class=" mt16 footer-list">
+                        <li class="footer-list__item"><a href=""> About Us</a></li>
+                        <li class="footer-list__item"><a href="">Refer A Friend</a></li>
+                        <li class="footer-list__item"><a href="">Scolarship</a></li>
+                        <li class="footer-list__item"><a href="">Marketing</a></li>
+                        <li class="footer-list__item"><a href="">Free Courses</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col l-1 m-5  mt16  footer-contact" id="contact">
+                    <h4>Contact US</h4>
+                    <ul class=" mt16 footer-list">
+                        <li class="footer-list__item">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href=""> 01719534287 </a>
+                        </li>
+                        <li class="footer-list__item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <a href=""> Rangpur, Bangladesh</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href=""> weqjdba@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="footer-line mt8">
+                <p class="txt-center col l-12">© Copyright 2022 </p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

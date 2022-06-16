@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/register.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container grid wide-s ">
+        <div class="row mt64">
+            <div class="col l-o-2 l-8">
+                <form action="">
+                    <a class="home-link" href="./index.html">
+                        <div class="brand col l-4 l-o-4 ">
+                            <i class="fa-solid fa-book-open-reader"></i>
+                            <h4>LEARNING</h4>
+                        </div>
+                    </a>
+                    <div class="row form-content">
+                        <div class="col l-12 form-content-title ">
+                            <h2>Create an Account</h2>
+                            <h2>or <a href="./signIn.html">sign in</a> </h2>
+                        </div>
+                        <div class="col l-12 input-wrap ">
+                            <label for="Email">Email</label>
+                            <input id="Email" class="form-input" type="text" required>
+                        </div>
+                        <div class="col l-12 input-wrap ">
+                            <input hidden type="checkbox" id="check-password" onclick="Checked(Checker,inputTypePass )">
+                            <label for="Password">Password</label>
+                            <input  id="Password" class="form-input" type="password" value="hello" required>
+                            <label for="check-password" class="fa-solid fa-eye-slash Type-Password-icon "></label>
+                            <label for="check-password" class="fa-solid fa-eye Type-text-icon "></label>
+                        </div>
+                        <div class="col l-12 input-wrap ">
+                            <input hidden type="checkbox" id="check-confirm-password" onclick="Checked(Checker2,inputTypePass2)">
+                            <label for="Password-confirm">Confirm Password</label>
+                            <input  id="Password-confirm" class="form-input" type="password" value="hello" required>
+                            <label for="check-confirm-password" class="fa-solid fa-eye-slash Type-Password-icon "></label>
+                            <label for="check-confirm-password" class="fa-solid fa-eye Type-text-icon "></label>
+                            
+                        </div>
+                        <div class="col l-12 input-wrap">
+                            <label for="First Name">First Name</label>
+                            <input id="First Name" class="form-input" type="text" required>
+                        </div>
+                        <div class="col l-12 input-wrap">
+                            <label for="Last Name">Last Name</label>
+                            <input id="Last Name" class="form-input" type="text" required>
+                        </div>
+                        <div class="col l-12 input-wrap">
+                            <label for="Nick Name">Nick Name</label>
+                            <input id="Nick Name" class="form-input" type="text" required>
+                        </div>
+                        <div class="col l-12 input-wrap form-rule">
+                            <p>By creating an account you are agreeing to the
+                                <a href="">Terms of Service</a> and
+                                <a href="">Privacy Policy.</a>
+                            </p>
+                        </div>
+                        <div class="col l-4">
+                            <input type="submit" class="btn" value="Create an Account">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+
+var Checker = document.getElementById('check-password');
+var inputTypePass = document.getElementById('Password')
+var Checker2 = document.getElementById('check-confirm-password');
+var inputTypePass2 = document.getElementById('Password-confirm')
+
+    function Checked (param1, param2) {
+        
+        if (param1.checked === true) {
+            param2.type = 'text';
+        } else {
+            param2.type = 'password'
+        }
+    }
+
+</script>
+
+</html>

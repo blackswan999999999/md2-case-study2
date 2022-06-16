@@ -1,0 +1,114 @@
+body {
+    background-color: var(--sub-color);
+}
+
+.brand {
+    
+}
+
+
+
+.brand i {
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 8px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.brand h4{
+    font-size: 4rem;
+}
+
+
+.form-content .col {
+    margin-top: 16px;
+}
+
+.form-content-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-content-title a {
+    color: var(--primary-color);
+}
+
+.form-content-title h2 {
+    display: inline-block;
+}
+
+.form-content label {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.input-wrap {
+    position: relative;
+}
+
+.form-content .form-input {
+    width: 97%;
+    height: 2rem;
+    margin-top: 8px;
+    outline: none;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    padding: 8px;
+}
+
+
+.input-wrap  .Type-Password-icon {
+    position: absolute;
+    top: 38px;
+    right: 40px;
+    display: block;
+}
+
+.input-wrap  .Type-text-icon {
+    position: absolute;
+    top: 38px;
+    right: 40px;
+    display: none;
+}
+
+@media (max-width:768px)  {
+    .input-wrap  .Type-Password-icon,
+    .input-wrap  .Type-text-icon  {
+        right: 14px;
+    }
+    
+}
+
+
+.input-wrap  .Type-Password-icon:hover,
+.input-wrap  .Type-text-icon:hover {
+    color: var(--primary-color);
+}
+
+#check-password:checked ~ .Type-Password-icon,
+#check-confirm-password:checked ~ .Type-Password-icon{
+    display: none;
+}
+
+#check-password:checked ~ .Type-text-icon,
+#check-confirm-password:checked ~ .Type-text-icon{
+    display: block;
+}
+
+
+
+
+
+
+.form-rule {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.form-rule a {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--primary-color);
+}

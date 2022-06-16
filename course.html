@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/course.css">
+    <link rel="stylesheet" href="./asset/css/responsive.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container grid wide">
+        <div class="header mt16">
+            <div class="header-nav row">
+                <a href="./index.html" style="text-decoration: none; color: var(--txt-color);">
+                    <div class="brand col l-2 m-o-1 m-2">
+                        <i class="fa-solid fa-book-open-reader"></i>
+                        <h4>LEARNING</h4>
+                    </div>
+                </a>
+                <input type="checkbox" hidden id="sideNav__input">
+                <label for="sideNav__input col l-10" id="sideNav">
+                    <ul class="header-nav__list">
+                        <li class="header-nav__item-btn m-0">
+                            <a href="" class="header-nav__link btn ">Buy course</a>
+                        </li>
+                        <li class="header-nav__item-btn m-0">
+                            <a href="./signIn.html" class="header-nav__link btn disable">Login</a>
+                        </li>
+                        <li class="header-nav__item-btn m-0">
+                            <a href="./register.html" class="header-nav__link btn ">Register</a>
+                        </li>
+                        <li class="header-nav__item l-0"><a href="./signIn.html"> Buy course</a></li>
+                        <li class="header-nav__item l-0"><a href="./signIn.html"> Login</a></li>
+                        <li class="header-nav__item l-0"><a href="./register.html"> Register</a></li>
+
+                    </ul>
+                </label>
+
+
+                <div class="mobile-btn-menu ">
+                    <label for="sideNav__input" class="fa-solid fa-bars  icon-list" id="menu-icon"></label>
+                    <label for="sideNav__input" class="fa-solid fa-xmark  icon-close " id="menu-icon-close"></label>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container grid course-wrap-info">
+        <div class="grid wide-m">
+            <div class="row mt32 ">
+                <div class="col l-8 m-o-1 m-8 course-info mt16">
+                    <a href="./index.html">Home Page</a>
+                    <span><i class="fa-solid fa-angle-right"></i></span>
+                    <a href="">Course</a>
+                    <h2>The Complete JavaScript Course 2022: From Zero to Expert!</h2>
+                    <p>Loremectetur adipisicing elit. Ex fugit rerum q
+                        uisquam neque, corporis repellendus in dignissimos do
+                        lor quae quaerat a aut ab minus dicta, est aspernatur.
+                        Ratione, voluptas fugit!
+                    </p>
+                    <div class="course-info-ratting">
+                        <span>4.6</span>
+                        <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </span>
+                        <span>5000 students</span>
+
+                    </div>
+                    <h3>
+                        Lecturers: Jonas Schmedtmann
+                    </h3>
+                    <p>Update: 1/2022</p>
+                    <div class=" text-left  course-info-tablet ">
+                        <h2>12.99$</h2>
+                        <span class="btn"> Buy Course</span>
+                    </div>
+                </div>
+
+                <div class="col l-4 course-includes m-0">
+
+                    <div class="course-includes-vid ">
+                        <video width="100%" controls>
+                            <source src="./asset/videos/hello-world.mp4" type="video/mp4">
+                            Your browser does not support HTML video.
+                        </video>
+                    </div>
+
+                    <div class="course-includes-content">
+                        <div class="course-includes-header txt-center ">
+                            <h2>12.99$</h2>
+                            <span class="btn  course-includes-btn  "> Buy Course</span>
+                        </div>
+                        <div class="course-includes-body mt8 ">
+                            <h2>This course includes:</h2>
+
+                            <div>
+                                <i class="fa-solid fa-circle-play"></i>
+                                <p>69 hours on-demand video</p>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-file-arrow-down"></i>
+                                <p>18 downloadable resources</p>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-file"></i>
+                                <p>22 articles</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container grid wide-m">
+        <div class="row mt64 Course-content">
+            <div class="col l-8 m-o-1 m-9 Course-content-title ">
+                <h2>Course content:</h2>
+                <p>21 sections • 320 lectures • 69hr total length</p>
+            </div>
+            <div class="col l-8 m-o-1 m-8 mt32 Course-content-list">
+                <ul class="">
+                    <li class="Course-content-item">
+                        <div class="item-title mt16">
+                            <input hidden type="checkbox" id="Course-content--check1">
+                            <label for="Course-content--check1"
+                                class="fa-solid fa-caret-down Course-content-item-close "></label>
+                            <label for="Course-content--check1"
+                                class="fa-solid fa-caret-up Course-content-item-open "></label>
+                            <h3>Welcome,Welcome,Welcome!!</h3>
+                            <span>5 lectures - 23 min </span>
+                            <div class="Course-content-subNav">
+                                <ul>
+                                    <li>
+                                        <i class="fa-solid fa-circle-play"></i>
+                                        <span>Read Before You Start!</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-circle-play"></i>
+                                        <span>Watch Before You Start!</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-circle-play"></i>
+                                        <span>Setting Up Our Code Editor</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="Course-content-item mt16">
+                        <div class="item-title">
+                            <input hidden type="checkbox" id="Course-content--check2">
+                            <label for="Course-content--check2"
+                                class="fa-solid fa-caret-down Course-content-item-close "></label>
+                            <label for="Course-content--check2"
+                                class="fa-solid fa-caret-up Course-content-item-open "></label>
+                            <h3>Javascript Fundamental p1</h3>
+                            <span>25 lectures - 4hr 50 min </span>
+                            <div class="Course-content-subNav">
+                                <ul>
+                                    <li>
+                                        <i class="fa-solid fa-circle-play"></i>
+                                        <span>Hello World!</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-circle-play"></i>
+                                        <span>Coding Challenge #1</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-circle-play"></i>
+                                        <span>Setting Up Our Code Editor</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="Course-content-item mt16">
+                        <div class="item-title">
+                            <input hidden type="checkbox" id="Course-content--check3">
+                            <label for="Course-content--check3"
+                                class="fa-solid fa-caret-down Course-content-item-close "></label>
+                            <label for="Course-content--check3"
+                                class="fa-solid fa-caret-up Course-content-item-open "></label>
+                            <h3>Javascript Fundamental p2</h3>
+                            <span>20 lectures - 4hr 30 min </span>
+                            <div class="Course-content-subNav">
+                                <ul>
+                                    <li>
+                                        <i class="fa-solid fa-circle-play"></i>
+                                        <span>Functions</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-circle-play"></i>
+                                        <span>Arrow Functions</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-circle-play"></i>
+                                        <span>Basic Array Operations (Methods)</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col l-8 m-o-1 m-8 instructor">
+                <div class="instructor-info mt32">
+                    <h2>Instructor</h2>
+                    <h2>Jonas Schmedtmann</h2>
+                    <p>Web Developer, Designer, and Teacher</p>
+                </div>
+                <div class="instructor-achievements mt16">
+                    <div class="instructor-img">
+
+                    </div>
+                    <div class="instructor-highlight ">
+                        <p>
+                            <i class="fa-solid fa-star"></i>
+                            4.7 Instructor Rating
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-medal"></i>
+                            299,242 Reviews
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-user-group"></i>
+                            1,393,331 Students
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-circle-play"></i>
+                            5 Courses
+                        </p>
+                    </div>
+
+                </div>
+                <p>Hi, I'm Jonas! I have been identified as one of Udemy's Top Instructors and all my premium courses
+                    have earned the best-selling status for outstanding performance and student satisfaction.
+
+                    I'm a full-stack web developer and designer with a passion for building beautiful things from
+                    scratch. I've been building websites and apps since 2010 and also have a Master's degree in
+                    Engineering.
+                </p>
+            </div>
+        </div>
+        <hr style="width:100%">
+        <div class="footer mt32">
+            <div class="row">
+                <div class="col l-3 m-5 m-o-1  mt16  footer-brand ">
+                    <div class="brand">
+                        <i class="fa-solid fa-book-open-reader"></i>
+                        <h4>LEARNING</h4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligen
+                        di reiciendis reprehenderit fugiat placeat maxime. Porro
+                    </p>
+                    <div class="footer-brand-icon mt16">
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+
+                <div class="col l-3  m-5  mt16  footer-categoy">
+                    <h4>Category</h4>
+                    <ul class=" mt16 footer-list">
+                        <li class="footer-list__item"><a href="">Privacy & Poilicy</a></li>
+                        <li class="footer-list__item"><a href="">Tems & Condition</a></li>
+                        <li class="footer-list__item"><a href="">Customer Support</a></li>
+                        <li class="footer-list__item"><a href="">For Business</a></li>
+                        <li class="footer-list__item"><a href="">Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="col l-3 m-5 m-o-1  mt16  footer-link ">
+                    <h4>Useful Links</h4>
+                    <ul class=" mt16 footer-list">
+                        <li class="footer-list__item"><a href=""> About Us</a></li>
+                        <li class="footer-list__item"><a href="">Refer A Friend</a></li>
+                        <li class="footer-list__item"><a href="">Scolarship</a></li>
+                        <li class="footer-list__item"><a href="">Marketing</a></li>
+                        <li class="footer-list__item"><a href="">Free Courses</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col l-1 m-5  mt16  footer-contact" id="contact">
+                    <h4>Contact US</h4>
+                    <ul class=" mt16 footer-list">
+                        <li class="footer-list__item">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href=""> 01719534287 </a>
+                        </li>
+                        <li class="footer-list__item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <a href=""> Rangpur, Bangladesh</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href=""> weqjdba@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="footer-line mt8">
+                <p class="txt-center col l-12">© Copyright 2022 </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/register.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container grid wide-s ">
+        <div class="row mt64">
+            <div class="col l-o-2 l-8">
+                <form action="">
+                    <a class="home-link" href="./index.html">
+                        <div class="brand col l-4 l-o-4 ">
+                            <i class="fa-solid fa-book-open-reader"></i>
+                            <h4>LEARNING</h4>
+                        </div>
+                    </a>
+                    <div class="row form-content">
+                        <div class="col l-12 form-content-title ">
+                            <h2>Sign in</h2>
+                            <h2>or <a href="./register.html">Create an Account</a> </h2>
+                        </div>
+                        <div class="col l-12  ">
+                            <input id="Email" placeholder="Email Address" class="form-input" type="text" required>
+                        </div>
+                        <div class="col l-12 input-wrap  ">
+                            <input hidden type="checkbox" id="check-password" onclick="Checked(Checker,inputTypePass )">
+                            <input id="Password" placeholder="Password" value="your password" class="form-input"
+                                type="text" required>
+                            <label for="check-password" style="top: 22px;"
+                                class="fa-solid fa-eye-slash Type-Password-icon "></label>
+                            <label for="check-password" style="top: 22px;"
+                                class="fa-solid fa-eye Type-text-icon "></label>
+                        </div>
+                        <div class="col l-8  mt16">
+                            <input type="submit" class="btn" value="Log In">
+                        </div>
+                    </div>
+
+            </div>
+            </form>
+        </div>
+    </div>
+
+    </div>
+</body>
+<script>
+
+    var Checker = document.getElementById('check-password');
+    var inputTypePass = document.getElementById('Password')
+
+    function Checked(param1, param2) {
+
+        if (param1.checked === true) {
+            param2.type = 'text';
+        } else {
+            param2.type = 'password'
+        }
+    }
+</script>
+
+</html>

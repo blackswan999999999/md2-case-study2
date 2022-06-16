@@ -1,0 +1,233 @@
+
+
+/* banner + course info */
+
+.course-wrap-info {
+    background-color: #0077b6;
+    color: var(--white-color);
+  
+}
+
+.course-wrap-info .course-info {
+    font-size:1.4rem ;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.course-wrap-info .course-info a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.course-wrap-info .course-info h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    
+}
+
+.course-wrap-info .course-info h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+
+.course-info-ratting span i  {
+    color: #ee9b00;
+}
+
+.course-info-tablet {
+    display: none;
+}
+
+.course-includes {
+    position: fixed;
+    top: 12.9vh;
+    right: 20vh;
+    background-color: var(--white-color);
+    color: var(--text-color);
+    width: 400px;
+    height: 62vh;
+    border-radius: 4px;
+    box-shadow: 0 0 2px 1px rgb(181, 181, 181);
+}
+
+.course-includes-vid {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    
+}
+
+.course-includes-vid video {
+    border-radius: 4px;
+}
+
+.course-includes-content {
+    position: absolute;
+    top: 250px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-includes-header {
+    width: 100%;
+}
+
+.course-includes-header h2 {
+    font-size: 2.8rem;
+    padding: 10px;
+    
+}
+
+.course-includes-btn {
+   width: 50%;
+}
+
+
+.course-includes-body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.course-includes-body div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 2rem;
+    line-height: 1.4;
+}
+
+.course-includes-body div i {
+    margin: 0 8px;
+}
+
+/* banner + course info end */
+
+
+/* Course-content */
+
+
+
+.Course-content-title h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.Course-content-title p {
+    font-size: 2.4rem;
+    font-weight: 300;
+    margin-top: 16px;
+}
+
+.Course-content-list ul {
+    list-style: none;
+}
+
+.Course-content-item {
+    font-size: 1.4rem;
+    font-weight: 300; 
+    line-height: 1.6;
+}
+
+
+.item-title {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.item-title> h3 {
+    display: inline-block;
+}
+
+
+.item-title> span {
+    display: inline-block;
+}
+
+
+
+
+
+.Course-content-item .Course-content-item-open {
+    display: none;
+}
+
+input[id^=Course-content--]:checked ~.Course-content-item-close{
+    display: none;
+}
+
+input[id^=Course-content--]:checked ~.Course-content-item-open{
+    display: inline-block;
+} 
+
+
+.Course-content-subNav {
+    display: none;
+}
+
+input[id^=Course-content--]:checked ~.Course-content-subNav{
+    display: block;
+}
+
+/* Course-content end */
+
+
+
+/* Instructor-start */
+
+.instructor{
+  
+}
+
+.instructor p {
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-top: 16px;
+}
+
+.instructor-info{
+
+}
+
+.instructor-info h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.instructor-info p {
+    color: var(--sub-text-color);
+    font-size: 1.4rem;
+} 
+
+.instructor-achievements{
+ display: flex;
+}
+
+
+
+
+.instructor-img{
+    width:142px;
+    background-image: url(../img/sea-pic.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+}
+
+.instructor-highlight{
+    margin-left: 16px;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--text-color);
+}
